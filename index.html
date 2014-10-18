@@ -1,13 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Angular demo</title>
 </head>
 <body>
-    <p>Another version</p>
-    <p id="inner"></p>
-<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="scripts/script.js"></script>
+<h1>Ajax test on github pages</h1>
+<nav>
+    <ul>
+        <li><a href=".#/">Index</a></li>
+        <li><a href=".#/about">About</a></li>
+    </ul>
+</nav>
+<div id="content" ng-view></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.3.0/angular-route.min.js"></script>
+<script src="scripts/app.js"></script>
 </body>
 </html>

@@ -1,21 +1,28 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Angular demo</title>
+    <title>Document</title>
 </head>
 <body>
-<h1>Ajax test on github pages</h1>
-<nav>
-    <ul>
-        <li><a href=".#/">Index</a></li>
-        <li><a href=".#/about">About</a></li>
-    </ul>
-</nav>
-<div id="content" ng-view></div>
+<p>
+    <span data-bind="text: personInfo"></span>
+</p>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
-<script src="https://code.angularjs.org/1.3.0/angular-route.min.js"></script>
-<script src="scripts/app.js"></script>
+<script src="http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
+<script>
+    function ViewModel() {
+        var self = this;
+
+        self.personName = ko.observable('Bob');
+        self.personAge = ko.observable(123);
+
+        self.personInfo = ko.pureComputed(function() {
+            return "My name is " + self.personName() + ", I'm " + self.personAge();
+        });
+    }
+
+    ko.applyBindings(new ViewModel());
+</script>
 </body>
 </html>

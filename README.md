@@ -1,2 +1,0 @@
-sentika.github.io
-=================

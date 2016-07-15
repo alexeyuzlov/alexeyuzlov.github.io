@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="flier-crash.png">
+	<SubTexture name="flier-crash-1.png" x="0" y="0" width="81" height="50"/>
+	<SubTexture name="flier-crash-2.png" x="161" y="0" width="76" height="50"/>
+	<SubTexture name="flier-crash-3.png" x="83" y="0" width="76" height="50"/>
+	<SubTexture name="flier-crash-4.png" x="161" y="0" width="76" height="50"/>
+</TextureAtlas>

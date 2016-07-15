@@ -1,0 +1,4 @@
+<TextureAtlas imagePath="egg.png">
+	<SubTexture name="egg-crash.png" x="0" y="0" width="28" height="9"/>
+	<SubTexture name="egg.png" x="0" y="11" width="14" height="16"/>
+</TextureAtlas>

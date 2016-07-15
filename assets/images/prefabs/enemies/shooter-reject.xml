@@ -1,0 +1,4 @@
+<TextureAtlas imagePath="shooter-reject.png">
+	<SubTexture name="shooter-reject-shot-1.png" x="45" y="0" width="30" height="50"/>
+	<SubTexture name="shooter-reject-stay-1.png" x="0" y="0" width="43" height="50"/>
+</TextureAtlas>

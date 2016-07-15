@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="boss.png">
+	<SubTexture name="boss-1.png" x="0" y="306" width="103" height="100"/>
+	<SubTexture name="boss-2.png" x="0" y="408" width="103" height="100"/>
+	<SubTexture name="boss-3.png" x="105" y="0" width="103" height="100"/>
+	<SubTexture name="boss-4.png" x="0" y="408" width="103" height="100"/>
+	<SubTexture name="boss-blue-1.png" x="0" y="102" width="103" height="100"/>
+	<SubTexture name="boss-blue-2.png" x="0" y="204" width="103" height="100"/>
+	<SubTexture name="boss-blue-3.png" x="0" y="0" width="103" height="100"/>
+	<SubTexture name="boss-blue-4.png" x="0" y="204" width="103" height="100"/>
+</TextureAtlas>

@@ -1,9 +1,0 @@
-<TextureAtlas imagePath="player.png">
-	<SubTexture name="player-attack-1.png" x="45" y="60" width="25" height="58"/>
-	<SubTexture name="player-attack-2.png" x="0" y="60" width="43" height="58"/>
-	<SubTexture name="player-attack-3.png" x="0" y="0" width="49" height="58"/>
-	<SubTexture name="player-walk-1.png" x="98" y="60" width="19" height="58"/>
-	<SubTexture name="player-walk-2.png" x="77" y="0" width="20" height="58"/>
-	<SubTexture name="player-walk-3.png" x="51" y="0" width="24" height="58"/>
-	<SubTexture name="player-walk-4.png" x="72" y="60" width="24" height="58"/>
-</TextureAtlas>

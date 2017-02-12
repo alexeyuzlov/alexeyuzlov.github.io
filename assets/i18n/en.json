@@ -1,8 +1,10 @@
 {
-  "MAINMENU_HOME": "Home",
-  "MAINMENU_MESSAGING": "Messaging",
-  "MAINMENU_ANGELS": "Angels",
-  "MAINMENU_MEMBERS": "Members",
-  "MAINMENU_MODERATION": "Moderation",
-  "MAINMENU_AGENTS": "Agents"
+  "SECTIONS": {
+    "HOME": "Home",
+    "MESSAGING": "Messaging",
+    "ANGELS": "Angels",
+    "MEMBERS": "Members",
+    "MODERATION": "Moderation",
+    "AGENTS": "Agents"
+  }
 }

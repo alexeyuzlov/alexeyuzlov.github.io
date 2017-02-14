@@ -2,11 +2,11 @@
   "apiUrl": "http://api.c4.dev/api/",
   "debounceTime": 300,
   "pageSize": 40,
-  "enableUrlSearch": false,
+  "writeToHash": false,
   "yearOfBirthFrom": 1950,
   "yearOfBirthTo": 2000,
   "autocompleteSize": 10,
-  "theme": "green",
-  "language": "ru",
+  "theme": "blue",
+  "language": "en",
   "domainsListSize": 5
 }

@@ -1,10 +1,22 @@
 {
+  "COMMON": {
+    "FILTERS": "Filters",
+    "YES": "Yes",
+    "NO": "No"
+  },
   "SECTIONS": {
     "HOME": "Home",
     "MESSAGING": "Messaging",
     "ANGELS": "Angels",
     "MEMBERS": "Members",
-    "MODERATION": "Moderation",
+    "MODERATION": {
+      "HEADING": "Moderation",
+      "PHOTOS": "Photos",
+      "AVATARS": "Avatars",
+      "VERIFICATIONS": "Verifications",
+      "MESSAGES": "Messages",
+      "MEMBERS": "Members"
+    },
     "AGENTS": "Agents"
   }
 }

@@ -1,10 +1,22 @@
 {
+  "COMMON": {
+    "FILTERS": "Фильтр",
+    "YES": "Да",
+    "NO": "Нет"
+  },
   "SECTIONS": {
     "HOME": "Главная",
     "MESSAGING": "Сообщения",
     "ANGELS": "Ангелы",
     "MEMBERS": "Пользователи",
-    "MODERATION": "Модерация",
+    "MODERATION": {
+      "HEADING": "Модерация",
+      "PHOTOS": "Фото",
+      "AVATARS": "Аватары",
+      "VERIFICATIONS": "Верификация",
+      "MESSAGES": "Сообщения",
+      "MEMBERS": "Пользователи"
+    },
     "AGENTS": "Агенты"
   }
 }

@@ -4,5 +4,25 @@
     "MATCHES": "Совпадения",
     "SETTINGS": "Настройки",
     "ADVANCED": "Дополнительно"
-  }
+  },
+  "FILTERS": {
+    "LOOKS": "Внешность",
+    "COMPATIBILITY": "Совместимость",
+    "BACKGROUND": "Характеристика",
+    "VICES": "Привычки",
+    "MORE": "Дополнительно"
+  },
+  "EDIT_PROFILE": "Редактировать профиль",
+  "SETTINGS": "Настройки",
+  "SIGN_OUT": "Выйти",
+  "PHOTOS": "Фото",
+  "LIKES": "Лайки",
+  "CREDITS": "Кредиты",
+  "UPGRADE_TO_GOLD": "Обновить до Золотого",
+  "TERMS": "Условия",
+  "PRIVACY": "Конфиденциальность",
+  "SUPPORT": "Поддержка",
+  "CONTACT_US": "Обратная связь",
+  "COPYRIGHT": "©2016 Local Sex Friends, Inc. Все права защищены.",
+  "ADDRESS": "Tod Holding Ltd. - 6, Levadias Strovolos Cyprus 2023"
 }

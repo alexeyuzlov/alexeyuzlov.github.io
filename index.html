@@ -1,20 +1,58 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="counter-element.js"></script>
-    <title>Angular Elements</title>
+    <meta charset="utf-8"/>
+    <title>Dejavu</title>
+    <script src="vendor/phaser.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        #game {
+            width: 640px;
+            height: 480px;
+            margin: 120px auto 0;
+            border: 1px solid #000;
+        }
+
+        #description {
+            color: #999;
+            width: 640px;
+            margin: 10px auto 0;
+        }
+
+        a {
+            color: #999;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
 </head>
-
 <body>
-<counter-increment></counter-increment>
-<counter-element></counter-element>
-<counter-decrement></counter-decrement>
-<counter-reset></counter-reset>
+<div id="game"></div>
+<div id="description">
+    <p class="left">Left / Right - move left / right; Z - jump; X - attack; P - pause</p>
+    <p class="right"><a target="_blank" href="https://github.com/sentika/typescript-phaser-sample">Github</a></p>
+</div>
 </body>
-
 </html>

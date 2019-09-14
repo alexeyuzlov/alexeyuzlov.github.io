@@ -77,6 +77,11 @@ img {
     max-width: 100%;
 }
 
+.accent-box {
+    background: #eee;
+    padding: 8px;
+}
+
 .content-img {
     width: 200px;
     height: 140px;

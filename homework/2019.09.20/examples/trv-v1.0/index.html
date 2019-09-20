@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trv 1.0</title>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .pool {
+            display: none;
+        }
+
+        .pool-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-family: Bahnschrift, sans-serif;
+            font-size: 120px;
+            text-transform: uppercase;
+            letter-spacing: 25px;
+            background: #000;
+            color: #fff;
+            box-shadow: 0 0 3px red;
+        }
+
+        .mainmenu {
+            background: #80bdff;
+            border: 4px solid blue;
+            padding: 0 40px;
+        }
+
+        .mainmenu ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .mainmenu ul li a {
+            font-size: 32px;
+            color: #000;
+            white-space: nowrap;
+        }
+
+        .mainmenu ul li + li {
+            margin-left: 40px;
+        }
+
+        .article {
+            width: 400px;
+            background: #eee;
+            border: 4px solid #000;
+            border-radius: 8px;
+            padding: 8px;
+        }
+
+        .article img {
+            float: right
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .active {
+            outline: 10px red dashed;
+        }
+    </style>
+</head>
+<body>
+<h1 class="heading">trv-v1.0</h1>
+<div class="pool">
+    <article class="article pool-item">
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa ex facilis hic, voluptas
+            voluptatem.</p>
+        <p><img width="200" height="200" src="http://placekitten.com/200/200" alt="My Kitten">Lorem ipsum dolor sit
+            amet, consectetur
+            adipisicing elit. Animi culpa ex facilis hic, voluptas voluptatem.</p>
+    </article>
+    <div class="pool-item logo">
+        Logo
+    </div>
+    <nav class="pool-item mainmenu">
+        <ul>
+            <li>
+                <a href="javascript:void(0)">Main</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">About Me</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">Contact Us</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">Support</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+    var isEditableMode = true;
+    var counter = 0;
+    var poolItems = getPoolItems();
+
+    function getPoolItems() {
+        return document.querySelectorAll('.pool-item');
+    }
+
+    function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function selectElement(element) {
+        // ofc it should not affect .pool items, but who cares
+        getPoolItems().forEach((item) => item.classList.remove('active'));
+
+        if (!element) {
+            return;
+        }
+
+        element.classList.add('active');
+    }
+
+    function removeElement() {
+        var element = document.querySelector('.active');
+        if (!element) {
+            return;
+        }
+
+        element.parentNode.removeChild(element);
+    }
+
+    function createElement(zIndex, left, top) {
+        var index = random(0, poolItems.length - 1);
+        var box = poolItems.item(index).cloneNode(true);
+        box.style.position = 'fixed'; // might be in css cause no js logic
+        box.style.left = `${left}px`;
+        box.style.top = `${top}px`;
+        box.style.zIndex = zIndex.toString();
+        box.style.transform = 'translate(-50%, -50%)'; // might be in css cause no js logic
+
+        return box;
+    }
+
+    document.addEventListener('click', function (event) {
+        if (!isEditableMode) {
+            return;
+        }
+
+        var exist = event.target.closest('.pool-item');
+        // if click event was on exist element then show this on top of the others
+        if (exist) {
+            selectElement(exist);
+            exist.style.zIndex = counter.toString();
+            counter++;
+            return;
+        }
+        // otherwise generate new element
+        var element = createElement(counter, event.clientX, event.clientY);
+        selectElement(element);
+        document.body.appendChild(element);
+        counter++;
+    });
+
+    document.addEventListener('keydown', function (event) {
+        // btw, non cross browser
+        switch (event.key) {
+            case 'Delete':
+                removeElement();
+                return;
+            case 'Enter':
+                isEditableMode = !isEditableMode;
+                selectElement(null);
+                console.info('Is editable', isEditableMode);
+                return;
+            default:
+            // nothing
+        }
+    })
+</script>
+</body>
+</html>

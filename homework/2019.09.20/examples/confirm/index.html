@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Confirm</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .confirm-box {
+            width: 400px;
+            background: #ddd;
+            border: 1px solid #000;
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            padding: 20px;
+        }
+
+        .confirm-heading {
+            font-size: 24px;
+            margin: 0 0 80px;
+        }
+
+        .btn {
+            border: 1px solid #000;
+            padding: 8px 12px;
+            border-radius: 4px;
+            color: #000;
+            font-size: 24px;
+            background: transparent;
+        }
+
+        .btn-primary {
+            background: #ff9900;
+        }
+
+        .btn + .btn {
+            margin-left: 4px;
+        }
+
+        .actions {
+            display: flex;
+        }
+
+        /*Example*/
+        .confirm-overlay {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*.close {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+        }*/
+
+        /*.confirm-box {
+            position: relative;
+        }*/
+
+        .man-area {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 50;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .confirm-content {
+            max-height: 70vh;
+            /*max-height: calc(100vh - 300px);*/
+            overflow-y: auto;
+            margin-bottom: 24px;
+        }
+
+        /*.confirm-heading {
+            margin-bottom: 24px;
+        }*/
+    </style>
+</head>
+<body>
+<div class="site-wrapper">
+    <div class="page">
+        <div class="content">
+            <div class="section">
+                <h1>Lorem ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eaque impedit nesciunt odit quod? Accusantium asperiores atque, corporis cupiditate doloribus exercitationem fuga fugiat impedit iusto labore magni maiores non pariatur perspiciatis quo ratione rerum saepe sunt temporibus, veritatis. Dolor dolorem doloribus esse et excepturi illum magni obcaecati placeat quae quaerat qui, rem voluptate voluptatum. Ab accusamus adipisci aperiam aspernatur consequatur culpa deleniti dolorem eius, eos, natus necessitatibus neque obcaecati possimus quidem reprehenderit sit, tenetur. Accusantium aperiam at autem consectetur dignissimos ea, earum, est harum illum ipsam libero magnam minus pariatur placeat possimus quis quos sapiente soluta veritatis vitae voluptatem voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eaque impedit nesciunt odit quod? Accusantium asperiores atque, corporis cupiditate doloribus exercitationem fuga fugiat impedit iusto labore magni maiores non pariatur perspiciatis quo ratione rerum saepe sunt temporibus, veritatis. Dolor dolorem doloribus esse et excepturi illum magni obcaecati placeat quae quaerat qui, rem voluptate voluptatum. Ab accusamus adipisci aperiam aspernatur consequatur culpa deleniti dolorem eius, eos, natus necessitatibus neque obcaecati possimus quidem reprehenderit sit, tenetur. Accusantium aperiam at autem consectetur dignissimos ea, earum, est harum illum ipsam libero magnam minus pariatur placeat possimus quis quos sapiente soluta veritatis vitae voluptatem voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eaque impedit nesciunt odit quod? Accusantium asperiores atque, corporis cupiditate doloribus exercitationem fuga fugiat impedit iusto labore magni maiores non pariatur perspiciatis quo ratione rerum saepe sunt temporibus, veritatis. Dolor dolorem doloribus esse et excepturi illum magni obcaecati placeat quae quaerat qui, rem voluptate voluptatum. Ab accusamus adipisci aperiam aspernatur consequatur culpa deleniti dolorem eius, eos, natus necessitatibus neque obcaecati possimus quidem reprehenderit sit, tenetur. Accusantium aperiam at autem consectetur dignissimos ea, earum, est harum illum ipsam libero magnam minus pariatur placeat possimus quis quos sapiente soluta veritatis vitae voluptatem voluptatum?</p>
+                <button type="button" class="action">Удалить запись</button>
+
+<!--                hidden confirm-overlay-->
+                <div class="">
+                    <div class="confirm-box">
+                        <h4 class="confirm-heading">Are you sure?</h4>
+
+                        <!--<div class="confirm-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet blanditiis commodi esse facere fugiat ipsa iure quas similique. Cupiditate eaque earum esse exercitationem explicabo fugit molestias reiciendis rem repudiandae sapiente, totam veritatis. Adipisci atque dolorum fugiat ipsam non quis repellendus, sapiente soluta? Alias at cupiditate dicta dolorum hic, iste labore libero magni maxime minima nostrum obcaecati odit quos reprehenderit rerum sequi, similique sit tenetur totam voluptatibus! Aut commodi consectetur dolores doloribus, error facere in inventore, ipsam iure mollitia obcaecati porro quaerat, quam quas quidem sapiente similique sint vitae. Alias aliquam autem blanditiis commodi cupiditate non ratione sequi veritatis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet blanditiis commodi esse facere fugiat ipsa iure quas similique. Cupiditate eaque earum esse exercitationem explicabo fugit molestias reiciendis rem repudiandae sapiente, totam veritatis. Adipisci atque dolorum fugiat ipsam non quis repellendus, sapiente soluta? Alias at cupiditate dicta dolorum hic, iste labore libero magni maxime minima nostrum obcaecati odit quos reprehenderit rerum sequi, similique sit tenetur totam voluptatibus! Aut commodi consectetur dolores doloribus, error facere in inventore, ipsam iure mollitia obcaecati porro quaerat, quam quas quidem sapiente similique sint vitae. Alias aliquam autem blanditiis commodi cupiditate non ratione sequi veritatis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet blanditiis commodi esse facere fugiat ipsa iure quas similique. Cupiditate eaque earum esse exercitationem explicabo fugit molestias reiciendis rem repudiandae sapiente, totam veritatis. Adipisci atque dolorum fugiat ipsam non quis repellendus, sapiente soluta? Alias at cupiditate dicta dolorum hic, iste labore libero magni maxime minima nostrum obcaecati odit quos reprehenderit rerum sequi, similique sit tenetur totam voluptatibus! Aut commodi consectetur dolores doloribus, error facere in inventore, ipsam iure mollitia obcaecati porro quaerat, quam quas quidem sapiente similique sint vitae. Alias aliquam autem blanditiis commodi cupiditate non ratione sequi veritatis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet blanditiis commodi esse facere fugiat ipsa iure quas similique. Cupiditate eaque earum esse exercitationem explicabo fugit molestias reiciendis rem repudiandae sapiente, totam veritatis. Adipisci atque dolorum fugiat ipsam non quis repellendus, sapiente soluta? Alias at cupiditate dicta dolorum hic, iste labore libero magni maxime minima nostrum obcaecati odit quos reprehenderit rerum sequi, similique sit tenetur totam voluptatibus! Aut commodi consectetur dolores doloribus, error facere in inventore, ipsam iure mollitia obcaecati porro quaerat, quam quas quidem sapiente similique sint vitae. Alias aliquam autem blanditiis commodi cupiditate non ratione sequi veritatis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet blanditiis commodi esse facere fugiat ipsa iure quas similique. Cupiditate eaque earum esse exercitationem explicabo fugit molestias reiciendis rem repudiandae sapiente, totam veritatis. Adipisci atque dolorum fugiat ipsam non quis repellendus, sapiente soluta? Alias at cupiditate dicta dolorum hic, iste labore libero magni maxime minima nostrum obcaecati odit quos reprehenderit rerum sequi, similique sit tenetur totam voluptatibus! Aut commodi consectetur dolores doloribus, error facere in inventore, ipsam iure mollitia obcaecati porro quaerat, quam quas quidem sapiente similique sint vitae. Alias aliquam autem blanditiis commodi cupiditate non ratione sequi veritatis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet blanditiis commodi esse facere fugiat ipsa iure quas similique. Cupiditate eaque earum esse exercitationem explicabo fugit molestias reiciendis rem repudiandae sapiente, totam veritatis. Adipisci atque dolorum fugiat ipsam non quis repellendus, sapiente soluta? Alias at cupiditate dicta dolorum hic, iste labore libero magni maxime minima nostrum obcaecati odit quos reprehenderit rerum sequi, similique sit tenetur totam voluptatibus! Aut commodi consectetur dolores doloribus, error facere in inventore, ipsam iure mollitia obcaecati porro quaerat, quam quas quidem sapiente similique sint vitae. Alias aliquam autem blanditiis commodi cupiditate non ratione sequi veritatis.</p>
+                        </div>-->
+
+                        <button type="button" class="close">
+                            <i class="material-icons">close</i>
+                        </button>
+
+                        <div class="actions">
+                            <button type="button" class="btn btn-primary">Confirm</button>
+                            <button type="button" class="btn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hidden man-area">
+    <img src="man.jpeg" alt="man about css">
+</div>
+
+<script>
+    // document.querySelector('.man-area').classList.remove('hidden');
+
+    var action = document.querySelector('.action');
+    action.addEventListener('click', function () {
+        let overlay = document.querySelector('.confirm-overlay');
+        overlay.classList.remove('hidden');
+    })
+</script>
+</body>
+</html>

@@ -53,7 +53,7 @@ a:hover {
 
 body {
     overflow-y: scroll;
-    font: normal 16px 'Segoe UI', sans-serif;
+    font: normal 16px 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -125,12 +125,14 @@ img {
     padding: 24px;
     background: #eee;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-general {
     border-top: 1px solid #666;
     grid-area: footer;
-    padding: 24px;
+    padding: 24px 0;
 }
 
 /*mainmenu*/
@@ -161,10 +163,29 @@ img {
     background-color: var(--mainmenu-active-bg-color);
 }
 
+.css3 {
+    color: purple;
+    text-shadow: 1px 1px 2px purple;
+    transition: font-size .4s ease-in-out;
+}
+
+.css3:hover {
+    font-size: 4em;
+}
+
 /*list*/
 .list {
-    line-height: 2;
+    line-height: 2em;
     list-style: square;
+}
+
+.bullet {
+    position: relative;
+}
+
+.bullet:before {
+    content: '';
+    position: absolute;
 }
 
 @media screen and (min-width: 991px) {

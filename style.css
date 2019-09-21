@@ -96,8 +96,6 @@ img {
     grid-template-areas: "nav" "main" "footer";
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    padding-top: var(--navbar-height);
-    box-sizing: border-box;
 }
 
 .container {
@@ -139,12 +137,6 @@ img {
 
 /*mainmenu*/
 .mainmenu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-
-    height: var(--navbar-height);
     background: var(--mainmenu-bg-color);
     color: var(--mainmenu-color);
     box-shadow: 1px 1px 4px var(--mainmenu-bg-color);
@@ -196,6 +188,19 @@ img {
 }
 
 @media screen and (min-width: 991px) {
+    .site-wrapper {
+        padding-top: var(--navbar-height);
+        box-sizing: border-box;
+    }
+
+    .mainmenu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: var(--navbar-height);
+    }
+
     .mainmenu-list {
         display: flex;
         align-items: center;
@@ -207,10 +212,6 @@ img {
 }
 
 @media screen and (max-width: 990px) {
-    .mainmenu {
-        height: auto;
-    }
-
     .main-general {
         flex-direction: column;
     }

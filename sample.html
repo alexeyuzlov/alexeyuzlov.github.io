@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .btn-icon {
+            cursor: pointer;
+            border: 0;
+            background: none;
+            appearance: none;
+        }
+
+        .chat {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-input {
+            width: 100%;
+            box-sizing: border-box;
+            height: 40px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            padding: 4px;
+        }
+
+        .chat-header {
+            border-bottom: 1px solid #444;
+        }
+
+        .chat-footer {
+            border-top: 1px solid #444;
+        }
+
+        .chat-header,
+        .chat-footer {
+            background-color: #a1b4cc;
+            display: flex;
+            align-items: center;
+            padding: 12px;
+        }
+
+        .chat-window {
+            padding: 24px;
+            flex: 1 1 auto;
+            overflow-y: scroll;
+            background: #dfe7f7;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat .avatar {
+            border-radius: 50%;
+        }
+
+        .username {
+            margin: 0 0 0 12px;
+            overflow: hidden;
+            text-transform: uppercase;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .chat .close {
+            margin-left: auto;
+        }
+
+        .chat .send-cta {
+            margin-left: 8px;
+        }
+
+        .message {
+            padding: 12px;
+            background: #a1b4cc;
+            border-radius: 4px;
+            max-width: 80%;
+            align-self: flex-start;
+            border: 1px solid transparent;
+        }
+
+        .message + .message {
+            margin-top: 24px;
+        }
+
+        .message.my {
+            background: #b6c2cc;
+            border: 1px solid #a7abcc;
+            align-self: flex-end;
+            text-align: right;
+        }
+
+        /*bless ie*/
+
+        /*https://stackoverflow.com/questions/10305658/prevent-button-from-shifting-during-click-in-ie*/
+        /*button:active span,
+        button:focus span,
+        button:active i,
+        button:focus i {
+            position: relative;
+            top: 0;
+            left: 0;
+        }*/
+
+        /*.message {
+            flex-shrink: 0;
+        }*/
+
+        /*https://stackoverflow.com/questions/48687129/padding-bottom-not-working-in-firefox-ie11*/
+        /*.chat-window {
+            padding-bottom: 0;
+        }
+
+        .chat-window:after {
+            content: '';
+            display: block;
+            padding-bottom: 24px;
+        }*/
+
+        /*wow, firefox need fix too*/
+        /*.avatar {
+            flex-shrink: 0;
+        }*/
+    </style>
+</head>
+<body>
+<div class="chat">
+    <div class="chat-header">
+        <img class="avatar" src="http://placekitten.com/40/40" alt="Petrovich">
+
+        <h4 class="username">Джон Смит Единственный и Неповторимый</h4>
+
+        <button type="button" class="btn-icon close">
+            <i class="material-icons">close</i>
+        </button>
+    </div>
+
+    <div class="chat-window">
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.
+        </div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message my">Lorem Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+        <div class="message my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, porro.</div>
+    </div>
+
+    <div class="chat-footer">
+        <input class="chat-input" type="text" placeholder="Type here...">
+        <button type="button" class="btn-icon send-cta">
+            <i class="material-icons">send</i>
+        </button>
+    </div>
+</div>
+</body>
+</html>

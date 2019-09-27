@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .tooltip-content {
+            display: none;
+        }
+
+        .tooltip-cta:hover + .tooltip-content {
+            display: block;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline;
+        }
+
+        .tooltip-cta {
+            font-weight: bold;
+            color: red;
+        }
+
+        .tooltip-content {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #333;
+            box-shadow: 0 0 4px #222;
+            text-align: center;
+            min-width: 100px;
+            max-width: 200px;
+            /*Don't*/
+            /*overflow: hidden;*/
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            left: 50%;
+            bottom: calc(100% + 8px);
+
+            transform: translateX(-50%);
+            /*margin-left: -100px;*/
+        }
+
+        .tooltip-content:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            width: 12px;
+            height: 12px;
+            background-color: inherit;
+            border: 1px solid #333;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+    </style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+<span class="tooltip">
+    <span class="tooltip-cta">Spoiler not only for Luke, but for Leya too</span>
+    <span class="tooltip-content">
+        I'm still your father, my friend
+    </span>
+</span>
+eaque facere, fugiat hic id illum maiores maxime
+odit quas recusandae sequi suscipit vitae. Accusantium, culpa officiis?</p>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quibusdam?</p>
+</body>
+</html>

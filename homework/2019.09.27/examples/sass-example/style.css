@@ -1,0 +1,25 @@
+.button {
+  color: #f90;
+  border: 1px solid #f90;
+}
+.button:hover {
+  border: #fc9700;
+  color: #fc9700;
+}
+
+.header {
+  background: #f90;
+  color: #000;
+}
+.header .button {
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #000;
+}
+.header .mainmenu:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.header .mainmenu .item {
+  float: left;
+}

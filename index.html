@@ -9,20 +9,20 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="assets/styles/style.css"/>
 </head>
 <body>
 <div class="site-wrapper">
-    <nav class="mainmenu">
+    <nav class="nav-general mainmenu">
         <ul class="mainmenu-list container">
             <li class="mainmenu-item">
                 <a class="mainmenu-link active" href="#">Главная</a>
             </li>
             <li class="mainmenu-item">
-                <a class="mainmenu-link" href="homework/2019.09.20/task.html">Актуальное ДЗ</a>
+                <a class="mainmenu-link" href="homework/2019.09.27/task.html">Актуальное ДЗ</a>
             </li>
             <li class="mainmenu-item">
-                <a class="mainmenu-link" href="project/2019.09.20/task.html">Задание по проекту</a>
+                <a class="mainmenu-link" href="project/2019.09.27/task.html">Задание по проекту</a>
             </li>
             <li class="mainmenu-item">
                 <a class="mainmenu-link" href="exam/links.html">Экзамен</a>
@@ -30,48 +30,51 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <h1>It still works!</h1>
+    <main class="main-general container">
+        <div class="content">
+            <h1>It works last week&#8230;</h1>
 
-        <div>
-            <img src="assets/man.jpg" height="520" width="311"/>
+            <div>
+                <a href="dist.zip">Скачать исходники</a>
+            </div>
+
+            <h2>Немного серьезного</h2>
+            <ul class="list">
+                <li>
+                    Обязательно скачивайте исходники с сайта домашки и проекта, чтобы ИЗУЧИТЬ исходники моего сайта, а
+                    не просто открывать сайт через браузер. Это хороший пример html/css понятного и сильного уровня. Что
+                    ещё, гораздо важнее то, что в папке homework очень часто будет и уже есть папки examples с последней
+                    лекции, например верстка лейаута через flex / float / grid
+                </li>
+                <li>
+                    Cкидываю вам <a href="project-example.zip" target="_blank">пример</a> как должна была минимально
+                    выглядеть админка, после двух недель проекта. Соблюдайте главный принцип -
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">не усложняй</a>.
+                    Очень частая ошибка в обучении - это продумывание наперед архитектуры и решений, которые вам ещё
+                    только предстоит изучить.
+                </li>
+                <li>
+                    Статьи, которые идут в домашке - обязательны к чтению, не стоит приступать к flex, если вы ещё
+                    ничего не читали обо flex
+                </li>
+                <li>
+                    Пишите мне, если у вас не получается что-то сделать или вы не понимаете как это применять, я готов
+                    вам помочь. Пишите мне хотя бы о том, на каком этапе у вас находится проект, потому что см.
+                    следующий пункт
+                </li>
+                <li>
+                    <b>4 октября</b> это последняя дата сдачи вами проекта на html/css технологиях минимального уровня,
+                    чтобы получить допуск к следующим занятиям по js. О допуске к следующим занятиям вы должны услышать
+                    / прочитать от меня лично. Я готов пойти вам на встречу, но для этого я должен знать, что вы
+                    продолжаете заниматься
+                </li>
+            </ul>
         </div>
 
-        <div>
-            <a href="dist.zip">Скачать исходники</a>
-        </div>
-
-        <h2>Немного серьезного</h2>
-        <ul class="list">
-            <li>
-                Обязательно скачивайте исходники с сайта домашки и проекта, чтобы ИЗУЧИТЬ исходники моего сайта, а не
-                просто открывать сайт через браузер. Это хороший пример html/css понятного и сильного
-                уровня. Что ещё, гораздо важнее то, что в папке homework очень часто будет и уже есть папки examples с
-                последней лекции, например верстка лейаута через flex / float / grid
-            </li>
-            <li>
-                Cкидываю вам <a href="admin.zip" target="_blank">пример</a> как должна была минимально
-                выглядеть админка, после двух недель проекта. Соблюдайте главный принцип -
-                <a target="_blank" href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">не усложняй</a>.
-                Очень частая ошибка в обучении - это продумывание наперед архитектуры и решений, которые вам ещё только
-                предстоит изучить.
-            </li>
-            <li>
-                Статьи, которые идут в домашке - обязательны к чтению, не стоит приступать к flex, если вы ещё ничего не
-                читали обо flex
-            </li>
-            <li>
-                Пишите мне, если у вас не получается что-то сделать или вы не понимаете как это применять, я готов вам
-                помочь. Пишите мне хотя бы о том, на каком этапе у вас находится проект, потому что см. следующий пункт
-            </li>
-            <li>
-                <b>4 октября</b> это последняя дата сдачи вами проекта на html/css технологиях минимального уровня,
-                чтобы получить допуск к следующим занятиям по js. О допуске к следующим занятиям вы должны услышать /
-                прочитать от меня лично. Я готов пойти вам на встречу, но для этого я должен знать, что вы продолжаете
-                заниматься
-            </li>
-        </ul>
-    </div>
+        <aside class="sidebar">
+            <img src="assets/images/man.jpg" width="100%"/>
+        </aside>
+    </main>
 </div>
 </body>
 </html>

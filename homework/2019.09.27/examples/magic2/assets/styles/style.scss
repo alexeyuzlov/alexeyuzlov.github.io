@@ -1,0 +1,48 @@
+// layout
+$container-max-widths: (
+        xl: 960px
+);
+
+// base
+$font-family-base: 'Roboto';
+$line-height-base: 2.5;
+
+// colors
+$light: #eee;
+$dark: #8392c3;
+
+// type
+$hr-border-color: #000;
+$code-color: #000;
+
+// fonts
+$headings-font-weight: bold;
+$headings-color: #000;
+
+// links
+$link-color: #007100;
+$link-decoration: underline;
+
+// navbar
+$navbar-dark-color: #000;
+$navbar-dark-active-color: rgba(#fff, 0.8);
+$navbar-padding-y: 0;
+$nav-link-padding-y: .2rem;
+
+@import "vendors/bootstrap-scss/bootstrap";
+
+///////////////////////////
+// yes, bootstrap doesn't have css3 classes :(
+.css3 {
+  color: purple;
+  text-shadow: 1px 1px 2px purple;
+  transition: font-size .4s ease-in-out;
+}
+
+.nav-item.active {
+  background: #333b51;
+}
+
+aside a {
+  line-height: 1.25;
+}

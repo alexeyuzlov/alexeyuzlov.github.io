@@ -1,0 +1,18 @@
+.header {
+  background: $color-primary;
+  color: #000;
+
+  .button {
+    color: $color-secondary;
+    border: 1px solid #000;
+  }
+
+  .mainmenu {
+    @include clearfix;
+
+    // single line comment, wow
+    .item {
+      float: left;
+    }
+  }
+}

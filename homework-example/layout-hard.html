@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        body {
+            font-size: 24px;
+            display: grid;
+            grid-template-areas: "header" "content-general" "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            font-family: "Droid Sans", sans-serif;
+        }
+
+        .dark {
+            color: #fff;
+        }
+
+        header,
+        footer {
+            background: #333b51;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .sidebar-left {
+            width: 260px;
+            flex-shrink: 0;
+            background: #bcd3f1;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        .content-general {
+            grid-area: content-general;
+            display: flex;
+        }
+
+        main {
+            grid-area: content;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 640px) {
+            body {
+                font-size: 16px;
+                display: grid;
+                grid-template-areas: "header" "content-general" "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+                min-height: 100vh;
+                font-family: "Droid Sans", sans-serif;
+            }
+
+            .container {
+                width: auto;
+                padding: 0 24px;
+            }
+
+            .sidebar-left {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="dark">
+    <nav class="container inside">
+        Это шапка на темном фоне, она помещается в контейнер и у неё даже есть перенос на следующую
+        строчку. А ещё этот текст выравнен по вертикали
+    </nav>
+</header>
+
+<div class="content-general container">
+    <main>
+        <h1>Контент</h1>
+        <p>Это бесполезный контент, который занимает всю ширину и делится местом с сайдбаром. Дальше можно не читать, т.к. это текст - заглушка.
+        Контента было больше, однако, надо же показать что футер по прежнему прижат к низу страницы</p>
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, laboriosam maiores molestiae praesentium quasi tempore tenetur. Ad aliquam amet architecto commodi, debitis eius incidunt itaque labore molestiae, nam natus, officiis quas similique suscipit vitae? Aut, commodi consectetur debitis dolorum esse hic illo, magnam necessitatibus obcaecati quasi quod, rerum vel voluptates.</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, laboriosam maiores molestiae praesentium quasi tempore tenetur. Ad aliquam amet architecto commodi, debitis eius incidunt itaque labore molestiae, nam natus, officiis quas similique suscipit vitae? Aut, commodi consectetur debitis dolorum esse hic illo, magnam necessitatibus obcaecati quasi quod, rerum vel voluptates.</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, laboriosam maiores molestiae praesentium quasi tempore tenetur. Ad aliquam amet architecto commodi, debitis eius incidunt itaque labore molestiae, nam natus, officiis quas similique suscipit vitae? Aut, commodi consectetur debitis dolorum esse hic illo, magnam necessitatibus obcaecati quasi quod, rerum vel voluptates.</p>-->
+    </main>
+    <aside class="sidebar-left inside">
+        Сайдбар занимает 200px в ширину, когда будет мобильный вид, сайдбара больше не будет
+        через свойство display: none
+    </aside>
+</div>
+
+<footer>
+    <div class="container inside dark">
+        Это футер на темном фоне, почти как шапка. Что примечательно, он прижат к низу страницы, когда текста не хватает
+    </div>
+</footer>
+</body>
+</html>

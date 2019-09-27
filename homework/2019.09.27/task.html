@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="../../assets/styles/style.css"/>
+</head>
+<body>
+
+<div class="site-wrapper">
+    <nav class="nav-general mainmenu">
+        <ul class="mainmenu-list container">
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../index.html">Главная</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link active" href="#">Актуальное ДЗ</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../project/2019.09.27/task.html">Задание по проекту</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../exam/links.html">Экзамен</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-general container">
+        <div class="content">
+            <h1>Домашка от 2019.09.27</h1>
+
+            <p>В исходниках примеры в папке ./examples с последнего занятия</p>
+
+            <ul class="list">
+                <li>
+                    Изучить синтаксис
+                    <a target="_blank" href="https://sass-lang.com/guide">scss</a>.
+                    Чтобы использовать его вам понадобится <a href="https://nodejs.org/en/">Node.js</a>.
+                    После установки у вас появится пакетный менеджер <code>npm</code> в консоли. С ним подробнее
+                    познакомимся на js занятиях.
+                    Далее, следуя <a href="https://sass-lang.com/install" target="_blank">руководству</a>, в консоли
+                    <code>npm install -g sass</code>.
+                    После этого у вас появится <code>sass</code> в консоли. Далее используем <code>sass --watch
+                    input.scss output.css</code> с указанием файлов
+                    ввода и вывода. Файл вывода подключается в html страницу через link.
+                </li>
+                <li>
+                    Почитать ещё глубже о <a target="_blank" href="https://habr.com/ru/post/329820/">flexbox</a>
+                </li>
+                <li>
+                    (опционально) сверстать любой <a target="_blank" href="https://www.figmafreebies.com/">макет</a> или
+                    хотя бы его часть
+                    и получить от меня огромный фидбек, где мы разберем по полочкам все ошибки
+                </li>
+                <li>
+                    <h2>Полезные ссылки</h2>
+                    <ul>
+                        <li>
+                            Стоит ознакомиться и понимать <a target="_blank" href="https://ru.bem.info/">БЭМ</a>
+                            методологию.
+                            <a href="https://www.youtube.com/watch?v=lQPs20b3Ey8" target="_blank">Видео</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCaTfYudJUVA8cV_But8KZVQ">Канал</a>
+                            Вадима Макеева.
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://youtu.be/cO2-zYzjyD0">Ответ на главный вопрос в CSS</a>,
+                            Михаил Иванкив
+                        </li>
+                        <li>
+                            Ссылки на англ спецификации по
+                            <a target="_blank" href="https://www.w3.org/TR/html53/">html</a>
+                            и <a target="_blank" href="https://www.w3.org/Style/CSS/specs.en.html">css</a>
+                        </li>
+                        <li>
+                            Лучший справочник по<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                                                   target="_blank">WEB</a> в ру сегменте
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/wstdays"
+                               target="_blank">Веб-стандарты</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h2>Дополнительно</h2>
+                    <ul>
+                        <li>
+                            Что использовать кроме SCSS?
+                            <a target="_blank" href="http://lesscss.org/">less</a>,
+                            <a target="_blank" href="http://stylus-lang.com/">stylus</a>,
+                            <a target="_blank" href="https://postcss.org">PostCSS</a>
+                        </li>
+                        <li>
+                            Что использовать кроме bootstrap?
+                            <a target="_blank" href="https://foundation.zurb.com/">Zurb Foundation</a>,
+                            <a target="_blank" href="https://materializecss.com/">Materialize</a>,
+                            <a target="_blank" href="https://semantic-ui.com/">Semantic UI</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <aside class="sidebar">
+            <a target="_blank" href="../2019.09.06/task.html">Задание от 2019.09.06</a>
+            <a target="_blank" href="../2019.09.13/task.html">Задание от 2019.09.13</a>
+            <a target="_blank" href="../2019.09.20/task.html">Задание от 2019.09.20</a>
+        </aside>
+    </main>
+
+    <footer class="footer-general">
+        <div class="container">
+            <img src="../../assets/images/disable-cache.png" alt="How To Disable Cache">
+            <p>Не забываем отключить кеш и держать консоль разработчика открытой, чтобы при очередном F5 увидеть
+                изменения</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

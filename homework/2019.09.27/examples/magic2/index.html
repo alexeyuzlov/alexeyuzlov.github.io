@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+</head>
+<body>
+<div class="min-vh-100 site-wrapper">
+    <nav class="navbar navbar-expand navbar-dark bg-dark shadow sticky-top">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-decoration-none" href="#">Главная</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-uppercase text-decoration-none" href="#">Актуальное ДЗ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-decoration-none" href="#">Задание по проекту</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-decoration-none" href="#">Экзамен</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-general container">
+        <div class="row">
+            <div class="content col-sm pr-4">
+                <h2 class="mt-3 mb-4">Домашка от 2019.09.20</h2>
+
+                <p class="mb-0">В исходниках примеры в папке ./examples с последнего занятия</p>
+
+                <ul class="list">
+                    <li>
+                        <a href="https://geekbrains.ru/tests/169" target="_blank">Пройти тест по HTML5/CSS3</a>
+                        &#8594; читаем теорию по неотвеченным вопросам
+                    </li>
+                    <li>
+                        <h4>Что почитать по верстке?</h4>
+                        <ul>
+                            <li>
+                                Ещё больше хороших, приближенных к реальным кейсам,
+                                <a target="_blank" href="https://philipwalton.github.io/solved-by-flexbox">примеров</a>
+                                про позиционирование на флексах
+                            </li>
+                            <li>
+                                Как работает браузер?
+                                (<a target="_blank"
+                                    href="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">англ</a>
+                                или
+                                <a target="_blank"
+                                   href="https://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/">рус</a>)
+                            </li>
+                            <li>
+                                Касательно того, что называют (называли) <span class="css3">CSS3</span>,
+                                <a target="_blank" href="http://www.css3.info/preview/">краткий</a> справочник
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Практика</h4>
+                        <ul>
+                            <li>
+                                Сделать тултип на чистом css. Да, всего одно задание. Да, для него надо знать очень
+                                много
+                                теории.
+                                <br>
+                                <img class="img-thumbnail"
+                                     src="assets/images/tooltip.png"
+                                     width="222"
+                                     alt="Tooltip example"/>
+
+                                <h6 class="mt-2">Что понадобится</h6>
+                                <ul>
+                                    <li><code class="p-2 bg-light">display: none</code> для сокрытия тултипа</li>
+                                    <li>
+                                        <a target="_blank"
+                                           href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">псевдокласс</a>
+                                        <code class="p-2 bg-light">:hover</code> для отмены <code class="p-2 bg-light">display: none</code> при наведении
+                                    </li>
+                                    <li>позиционирование через <code class="p-2 bg-light">position: absolute</code> и <code class="p-2 bg-light">transform:
+                                        translate</code></li>
+                                    <li>Немного <span class="css3">CSS3</span> через <code class="p-2 bg-light">border-radius</code> и <code class="p-2 bg-light">box-shadow</code>
+                                    </li>
+                                    <li>сделать треугольник под тултипом.
+                                        Для этого понадобится
+                                        <a target="_blank"
+                                           href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">псевдоэлемент</a>
+                                        <code class="p-2 bg-light">:after</code>.
+                                        В остальном, его также позиционируем, как описано ранее.
+                                        Это обычный квадратный блок, который повернут на 45 градусов через
+                                        <code class="p-2 bg-light" style="transform: translateX(200%) rotate(45deg)">transofrm:
+                                            rotate</code>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Дополнительно</h4>
+                        <ul>
+                            <li class="p-2 bg-light">
+                                Если кто-то <b>ещё</b> пройдет любой из этих тестов до 4 октября 2019
+                                <a href="https://geekbrains.ru/tests/17" target="_blank">раз</a> и
+                                <a href="https://learn.javascript.ru/quiz/js-basic" target="_blank">два</a>,
+                                дайте мне знать, мне есть что с вами обсудить.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <aside class="bg-light col-sm-4 pt-4">
+                <a class="d-block" target="_blank" href="#">Задание от 2019.09.06</a>
+                <a class="d-block" target="_blank" href="#">Задание от 2019.09.13</a>
+            </aside>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer class="footer-general">
+        <div class="container">
+            <img src="assets/images/disable-cache.png" alt="How To Disable Cache">
+            <p>Не забываем отключить кеш и держать консоль разработчика открытой, чтобы при очередном F5 увидеть
+                изменения</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

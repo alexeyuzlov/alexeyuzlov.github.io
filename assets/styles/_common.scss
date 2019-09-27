@@ -1,0 +1,28 @@
+.accent-box {
+  background: #eee;
+  padding: 8px;
+}
+
+.content-img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+$css3-color: #800080;
+.css3 {
+  color: $css3-color;
+  text-shadow: 1px 1px 2px $css3-color;
+  transition: font-size .4s ease-in-out;
+
+  &:hover {
+    font-size: 4em;
+  }
+}
+
+.list {
+  line-height: 2em;
+  list-style: square;
+}

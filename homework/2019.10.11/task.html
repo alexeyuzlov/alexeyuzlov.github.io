@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="../../assets/styles/style.css"/>
+</head>
+<body>
+
+<div class="site-wrapper">
+    <nav class="nav-general mainmenu">
+        <ul class="mainmenu-list container">
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../index.html">Главная</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link active" href="#">Актуальное ДЗ</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../project/2019.10.11/task.html">Задание по проекту</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../exam/links.html">Экзамен</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-general container">
+        <div class="content">
+            <h1>Домашка от 2019.10.11</h1>
+
+            <h2>Что почитать?</h2>
+            <ul>
+                <li>
+                    <a href="https://learn.javascript.ru/first-steps" target="_blank">Основы JS</a>
+                </li>
+            </ul>
+
+            <p>
+                Написать функции и unit-тесты к ним на фреймворке
+                <a target="_blank" href="https://jasmine.github.io/tutorials/your_first_suite">Jasmine</a>.
+                Заготовка для описания тестов и самих функций в папке examples.
+                Для всех функций обрабатывать граничные условия и возвращать <code>null</code>
+                если входное значение некорректно для функции (например передача <code>undefined</code> или <code>null</code>)
+            </p>
+
+            <ul class="list">
+                <li>
+                    <code>yesOrNo(value)</code>
+                    Возвращает "Yes", "No" в зависимости от переданного value: boolean.
+                </li>
+                <li>
+                    <code>counter(total)</code>
+                    Функция-счётчик. Возвращает значение result = 1..9 для чисел 1..9. При передаче
+                    total: number больше девяти возвращает "9+".
+                </li>
+                <li>
+                    <code>calculateAge(date)</code>
+                    Возвращает положительное значение возраста в зависимости от переданной даты типа Date.
+                </li>
+                <li>
+                    <code>getRandomItem(list)</code>
+                    На входе массив list произвольного типа. Возвращает произвольный элемент из заданного массива.
+                </li>
+            </ul>
+        </div>
+
+        <aside class="sidebar">
+            <a target="_blank" href="../2019.09.06/task.html">Задание от 2019.09.06</a>
+            <a target="_blank" href="../2019.09.13/task.html">Задание от 2019.09.13</a>
+            <a target="_blank" href="../2019.09.20/task.html">Задание от 2019.09.20</a>
+            <a target="_blank" href="../2019.09.27/task.html">Задание от 2019.09.27</a>
+        </aside>
+    </main>
+</div>
+</body>
+</html>

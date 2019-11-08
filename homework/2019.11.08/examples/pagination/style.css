@@ -1,0 +1,20 @@
+.pagination {
+    display: flex;
+    list-style: none;
+}
+
+.pagination-item {
+    display: block;
+    background-color: #0c5460;
+    margin: 2px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    transition: all .2s linear;
+}
+
+.pagination-item.active {
+    background-color: yellow;
+    color: #000;
+}

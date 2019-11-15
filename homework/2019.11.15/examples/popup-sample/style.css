@@ -14,8 +14,7 @@ body {
 .popup {
     position: fixed;
     z-index: 100;
-    left: -2000px;
-    top: -2000px;
+    display: none;
 }
 
 .menu {

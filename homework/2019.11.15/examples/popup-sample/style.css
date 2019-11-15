@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.dynamic-area {
+    z-index: 5000;
+}
+
+.toggle {
+    position: fixed;
+}
+
+.popup {
+    position: fixed;
+    z-index: 100;
+    left: -2000px;
+    top: -2000px;
+}
+
+.menu {
+    width: 160px;
+    background-color: #abe2bd;
+}
+
+.menu-item {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 0 12px;
+    transition: background-color .2s linear;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-item:hover {
+    background-color: #a3cdcd;
+}

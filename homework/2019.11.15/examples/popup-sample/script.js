@@ -75,7 +75,6 @@ function open(toggleEl) {
     let originalPopupEl = toggleEl.nextElementSibling;
     let popupEl = originalPopupEl.cloneNode(true);
     popupEl.style.display = 'block';
-    popupEl.cloneNode();
     dynamicAreaEl.append(popupEl);
 
     // make sure you should recalculate window and toggleEl / popupEl positions every time when popup open

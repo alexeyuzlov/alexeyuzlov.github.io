@@ -13,8 +13,8 @@ body {
 
 .popup {
     position: fixed;
-    z-index: 100;
     display: none;
+    z-index: 100;
 }
 
 .menu {

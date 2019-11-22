@@ -1,1 +1,0 @@
-# sentika.github.io

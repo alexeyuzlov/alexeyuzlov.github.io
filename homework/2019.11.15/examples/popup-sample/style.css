@@ -13,7 +13,9 @@ body {
 
 .popup {
     position: fixed;
-    display: none;
+    left: -2000px;
+    top: -2000px;
+    /*display: none;*/
     z-index: 100;
 }
 

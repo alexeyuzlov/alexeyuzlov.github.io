@@ -38,6 +38,10 @@ class Geometry {
         let x = this.parentStartX + this.parentCenterX - this.centerX;
         let y = this.parentEndY + OFFSET_Y;
 
+        if (x + this.elRect.x + this.elRect.right > getWindowWidth()) {
+            x = getWindowWidth() - this.elRect.width;
+        }
+
         return {
             x,
             y
@@ -61,6 +65,7 @@ function getCoordinates({parentElRect, elRect}) {
     let geometry = new Geometry({parentElRect, elRect});
 
     let coords = geometry.tryOpenToTheBottom();
+
     // should be valid x, y if not
     // 1. try to apply fix to x, y before try next side
     // 2. check all possible cases before open popup as modal: bottom -> right -> top -> left
@@ -74,7 +79,7 @@ function getCoordinates({parentElRect, elRect}) {
 function open(toggleEl) {
     let originalPopupEl = toggleEl.nextElementSibling;
     let popupEl = originalPopupEl.cloneNode(true);
-    popupEl.style.display = 'block';
+    // popupEl.style.display = 'block';
     dynamicAreaEl.append(popupEl);
 
     // make sure you should recalculate window and toggleEl / popupEl positions every time when popup open

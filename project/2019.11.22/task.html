@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="../../assets/styles/style.css"/>
+</head>
+<body>
+
+<div class="site-wrapper">
+    <nav class="nav-general mainmenu">
+        <ul class="mainmenu-list container">
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../index.html">Главная</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../homework/2019.11.22/task.html">Актуальное ДЗ</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link active" href="#">Задание по проекту</a>
+            </li>
+            <li class="mainmenu-item">
+                <a class="mainmenu-link" href="../../exam/links.html">Экзамен</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-general container">
+        <div class="content">
+            <h1>Проект</h1>
+
+            <p>
+                Сделать динамическую форму квиза для паблика с генерацией контролов.
+                Другими словами переносим консольный квиз полностью в браузер.
+                Использовать за основу пример с последнего занятия (в папке examples)
+            </p>
+
+            <h2>Задание от 2019.11.22</h2>
+            <ul class="list">
+                <li>
+                    теория по <a target="_blank" href="https://learn.javascript.ru/forms-controls">формам</a>
+                </li>
+                <li>
+                    в зависимости от type вопроса должен генерироваться динамический контрол <code>.js-form-control</code>:
+                    <ul>
+                        <li>
+                            <code>type=radio</code>, для одного варианта ответа.
+                            На выходе должно быть значение из <code>data-value</code>
+                        </li>
+                        <li>
+                            <code>type=checkbox</code>, для нескольких вариантов ответа. На выходе массив из <code>data-value</code>.
+                            Этот случай уже реализован в examples
+                        </li>
+                        <li>
+                            <code>select</code>, для одного варианта ответа.
+                            Этот контрол является альтернативным к радио и удобнее в использовании,
+                            когда предлагается много вариантов ответа
+                        </li>
+                        <li>
+                            <b>(опционально)</b> <code>type=text</code>, для пользовательского ввода.
+                            Т.к. это пользовательский ввод предусмотрите дополнительную валидацию
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    для каждого вопроса динамический контрол <code>.js-form-control</code> должен генерится заново
+                </li>
+                <li>
+                    форма должна иметь простейшую валидацию (хотя бы не принимать пустой ответ).
+                    Т.е. при попытке отправить форму создавать <code>.error</code> с сообщением о невалидности.
+                </li>
+                <li>
+                    квиз должен заканчиваться статистикой по прохождению, т.е. обычный html виджет на ваше усмотрение.
+                </li>
+                <li>
+                    <b>(опционально)</b> Можно добавить функционал таймера и
+                    через <code>setInterval</code> обновлять DOM элемент таймера.
+                    Соответственно по <code>setTimeout</code> квиз прерывается
+                    и показывает статистику прохождения
+                </li>
+                <li>
+                    <b>(опционально)</b> Реализовать фичу кнопки назад, которая возвращает к предыдущему вопросу.
+                    При этом форма должна быть инициализирована с последним ответом пользователя.
+                </li>
+            </ul>
+        </div>
+
+        <aside class="sidebar">
+            <a target="_blank" href="../2019.09.06/task.html">Задание от 2019.09.06</a>
+            <a target="_blank" href="../2019.09.13/task.html">Задание от 2019.09.13</a>
+            <a target="_blank" href="../2019.09.20/task.html">Задание от 2019.09.20</a>
+            <a target="_blank" href="../2019.09.27/task.html">Задание от 2019.09.27</a>
+            <a target="_blank" href="../2019.10.11/task.html">Задание от 2019.10.11</a>
+            <a target="_blank" href="../2019.10.18/task.html">Задание от 2019.10.18</a>
+            <a target="_blank" href="../2019.10.25/task.html">Задание от 2019.10.25</a>
+            <a target="_blank" href="../2019.11.01/task.html">Задание от 2019.11.01</a>
+            <a target="_blank" href="../2019.11.08/task.html">Задание от 2019.11.08</a>
+            <a target="_blank" href="../2019.11.15/task.html">Задание от 2019.11.15</a>
+        </aside>
+    </main>
+</div>
+</body>
+</html>

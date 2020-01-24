@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="runner.png">
+	<SubTexture name="runner-1.png" x="31" y="0" width="27" height="58"/>
+	<SubTexture name="runner-2.png" x="0" y="60" width="29" height="58"/>
+	<SubTexture name="runner-3.png" x="0" y="0" width="29" height="58"/>
+	<SubTexture name="runner-4.png" x="0" y="60" width="29" height="58"/>
+</TextureAtlas>

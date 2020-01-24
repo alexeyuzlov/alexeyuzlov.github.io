@@ -1,42 +1,58 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8"/>
+    <title>Dejavu</title>
+    <script src="vendor/phaser.min.js"></script>
+    <script src="js/main.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link rel="stylesheet" href="assets/styles/style.css"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        #game {
+            width: 640px;
+            height: 480px;
+            margin: 120px auto 0;
+            border: 1px solid #000;
+        }
+
+        #description {
+            color: #999;
+            width: 640px;
+            margin: 10px auto 0;
+        }
+
+        a {
+            color: #999;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<div class="site-wrapper">
-    <nav class="nav-general mainmenu">
-        <ul class="mainmenu-list container">
-            <li class="mainmenu-item">
-                <a class="mainmenu-link active" href="#">Главная</a>
-            </li>
-            <li class="mainmenu-item">
-                <a class="mainmenu-link" href="tasks/2019.11.29/task.html">Задания</a>
-            </li>
-        </ul>
-    </nav>
-
-    <main class="main-general container">
-        <div class="content">
-            <h1>It works</h1>
-
-            <div>
-                <a target="_blank" href="https://github.com/sentika/sentika.github.io">Репозиторий сайта</a>
-            </div>
-        </div>
-
-        <aside class="sidebar"></aside>
-    </main>
+<div id="game"></div>
+<div id="description">
+    <p class="left">Left / Right - move left / right; Z - jump; X - attack; P - pause</p>
+    <p class="right"><a target="_blank" href="https://github.com/sentika/typescript-phaser-sample">Github</a></p>
 </div>
-
-<script src="assets/scripts/rickroll.js"></script>
 </body>
 </html>

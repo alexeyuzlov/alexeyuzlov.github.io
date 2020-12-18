@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd6b8ce4-218a-4fdf-8b8a-cecb06944baa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/images/ground.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/ground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/bottles/bottle-hp.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/bottles/bottle-hp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/bottles/bottle-super.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/bottles/bottle-super.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/bullets/bullet-reject.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/bullets/bullet-reject.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/bullets/bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/bullets/bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/bullets/egg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/bullets/egg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/bullets/egg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/bullets/egg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/boss.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/boss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/boss.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/boss.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/flier-crash.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/flier-crash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/flier-crash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/flier-crash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/flier.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/flier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/flier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/flier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/runner-block.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/runner-block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/runner.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/runner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/runner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/shooter-reject.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/shooter-reject.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/shooter-reject.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/shooter-reject.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/shooter.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/shooter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/enemies/shooter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/enemies/shooter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/exit.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/exit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/hud.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/hud.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/ice-spike.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/ice-spike.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/platform-h.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/platform-h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/platform-v.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/platform-v.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/player/player.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/player/player.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/player/player.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/player/player.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/preload-bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/preload-bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/spike.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/spike.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/transparent-debug.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/transparent-debug.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/transparent.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/transparent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/prefabs/tween.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/prefabs/tween.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/rain.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/rain.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/snowflake.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/snowflake.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/zone1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/zone1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/zone2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/zone2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/zone3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/zone3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/zone4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/zone4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/levels/1-1.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/levels/1-1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/levels/2-1.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/levels/2-1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/levels/3-1.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/levels/3-1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/levels/4-1.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/levels/4-1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phaser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/phaser.min.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lps139Pzb8kBhkro9227rcNIPt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.9" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\sentika.github.io" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\sentika.github.io\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd6b8ce4-218a-4fdf-8b8a-cecb06944baa" name="Default Changelist" comment="" />
+      <created>1608305148621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608305148621</updated>
+      <workItem from="1608305149734" duration="1019000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

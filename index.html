@@ -1,51 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/7.4.0/adapter.min.js" integrity="sha512-Q1CI1+VPudwzIg95qTgAybfooiw87q1fTbYlnjzqUPgKxUJjZMMS2I9bXQtq1GWH4WT38E0VOvHpkCS10hz49g==" crossorigin="anonymous"></script>
-</head>
-
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Checksum</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"></head>
 <body>
-    <button type="button" onclick="audio()">audio</button>
-    <button type="button" onclick="video()">video</button>
+  <app-root></app-root>
+<script src="runtime.10d47485944bf9224acc.js" defer></script><script src="polyfills.50ae9de16c29c01c50ba.js" defer></script><script src="main.a8a3fd3373583fc32f8f.js" defer></script>
 
-    <div id="outAudio"></div>
-    <div id="outVideo"></div>
-
-    <script>
-        let outAudioEl = document.querySelector('outAudio');
-        let outVideoEl = document.querySelector('#outVideo');
-
-        function audio() {
-            navigator.mediaDevices.getUserMedia({ audio: true })
-                .then((data) => {
-                    console.info('audio ok');
-                    console.table(data);
-                    outAudioEl.innerHTML = JSON.stringify(data) + data;
-                })
-                .catch((err) => {
-                    console.warn('audio err', JSON.stringify(err))
-                    outAudioEl.innerHTML = JSON.stringify(err) + err;
-                });
-        }
-
-        function video() {
-            navigator.mediaDevices.getUserMedia({ video: true })
-                .then((data) => {
-                    console.info('video ok');
-                    console.table(data);
-                    outVideoEl.innerHTML = JSON.stringify(data) + data;
-                })
-                .catch((err) => {
-                    console.warn('audio err', JSON.stringify(err))
-                    outVideoEl.innerHTML = JSON.stringify(err) + err;
-                });
-        }
-    </script>
-</body>
-
-</html>
+</body></html>
